@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@300&family=Quattrocento+Sans&display=swap');
+
+body {
+  font-size:  22px; /* setting font-size of body to 20px to increase font size from default and to set 20px as my body font-size */
+  font-family:  "Montserrat", "Georgia", "sans-serif"; /* sets the font of the body text to Montserrat, then Georgia, then sans-serif */
+
+  width: 100vw;
+
+  min-width: 35ch;  /* sets the minimum width of the body element, which is based on the width of zero of the font. This will change if the font-family changes. */
+  max-width: 80ch;  /* sets the maximum width of the body element, which is based on the width of zero of the font. This will change if the font-family changes */
+  line-height:  1.4; /* increases the line height for readability */
+  margin: auto; /* centers the content on the page by displaying equal margins of whitespace on either side */
+  padding: 2rem; /* adds space when viewport gets too small */
+
+  background-color: #4b4848; /* sets the background colour of the page */
+  color: #FFFFFF; /* sets the colour of the foreground (text) */
+}
+
+nav ul {
+  display:flex; /* changes the <ul> element in the <nav> section to a flex container */
+  justify-content: flex-start; /* all items push to the main axis start */
+  align-items: center; /* lines up the bottom of the text of the buttons with the bottom of the text of the links */
+ 
+  font-size: 2rem;  /* sets the font size of the navigation links */
+  list-style: none;  /* removes bullets from list */
+  padding: 0; /* removes the default padding of an unordered list */
+  margin: 0.5rem; /* gives a small margin to the nav bar to space it slightly from the site name and logo */
+}
+
+li {
+  flex: auto; /* grows the flex items to fill the available space */ /* note that flex: applies to the flex items */
+  text-align: center;  /* centers the text in the flex item */
+}
+
+nav a {
+  text-decoration: none; /* removes underline from links */
+  color: #FFFFFF; /* changes color of link text to white */
+}
+
+nav a:hover {
+  color: #3FBF3F; /* changes colour of link when user hovers over it */
+}
+
+.button_styling {
+  background-color: silver; /* changes the background color of the last two nav link items */
+  color: grey; /* changes the colour of the text of the register and login buttons */
+  font-family: "Helvetica", sans-serif; /* changes the font of the text of the register and login buttons */
+
+  border: 1px solid white; /* adds a border to give the appearance of a button */
+  border-radius: 15px; /* rounds the corners of the button */
+  box-shadow: 7.5px 7.5px 5px 2px #000000;
+
+  margin: 1rem; /* spaces the buttons apart */
+  padding: 0.5rem;
+}
+ .button_text {
+   color: black;
+ }
+
+#logo {
+  border: 10px solid #A57F59; /* sets a border around the logo */
+  border-radius: 25px;  /* rounds the corners of the logo */
+  box-shadow: 7.5px 7.5px 5px 2px #000000;
+  margin: 1.5rem 0rem 1.5rem 0rem; /* adds space on the top and the bottom */
+}
+
+#site_name {
+  width: 52rem;
+  font-size: 8rem; /* sets the font size of the site name */
+  font-family:  "Anton", "Montserrat", "Georgia", sans-serif; /* sets the font family of the site name */
+  font-variant: small-caps; /* changes text to small caps */
+  color: #62ce62ff; 
+  background-color: #A57F59;
+  border: 10px solid  #62ce62ff; /* sets a border aroung the site name for working purposes */
+  border-radius: 25px; /* rounds the corner of the site name box */
+  text-shadow: 10px 10px 10px #000000; /* applies text shadow to the site name  horizoffset vertoffset blurradius color */
+  box-shadow: 7.5px 7.5px 5px 2px #000000;
+  margin-left: 6rem;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2rem; /* sets the font size to twice the head element (page default) size */
+  font-family: "Quattrocento", "Georgia", "sans-serif"; /* sets the font of h1 to Quattrocento, then Georgia, then sans-serif */
+  color: #62ce62ff; /* overrides the font color set in the body element */
+
+  border-bottom: 3px solid #3FBF3F; /* renders a green line below the content headers */
+}
+
+#sitenametext {
+  padding: 0; /* sets the padding of the paragraph block that contains the site name */
+  margin: 1.5rem; /* sets the margin of the paragraph block that contains the site name to narrow the box around it */
+}
+
+#email_link {
+  color: lightskyblue; /* sets the link to email colour to improve contrast */
+  text-decoration: none; /* removes the underline for the email link */
+}
+
+address {
+  display: flex; /* turns the <address> element into a flex container */
+  justify-content: space-between; /* places the map placeholder at the start and the contact information at the end */
+}
+
+address p {
+  margin: 0rem; /* removes the margins around the paragraphs in the address section */
+}
+
+.map {
+  border: 1px solid #FFFFFF; /* adds a border to the map placeholder */
+  width: 50rem;  /* sets the width of the placeholder border */
+  height: 20rem; /* sets the height of the placeholder border */
+  text-align: center; /* centers the text in the map placeholder */
+  padding-top: 6rem; /* lowers the text in the map placeholder */
+  margin-bottom: 2rem; /* adds space between the map placeholder and the footer */
+}
+
+.address_block {
+  padding: 2rem;
+  margin: 2rem;
+}
+
+.float_left {
+  float: left;  /* floats the image to the left */
+  margin-right: 2rem;  /* puts padding between the image and the text */
+}
+
+.float_right {
+  float: right;  /* floats the image to the right */
+  margin-left: 2rem;
+}
+
+#services {
+  margin-bottom: 8rem;
+}
+
+#about_us {
+  margin-bottom: 8rem;
+}
+
+.container {
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start;
+  margin: auto;
+}
+
+footer {
+  font-size: 0.8em; /* sets the font size to 0.8 of the body element size */
+  font-family: "Georgia", "sans-serif"; /* sets font of footer to Georgia with a fall back of sans-serif */
+  text-align: center;  /* centers the content of the footer section */
+  padding: 0em;
+  border-top: 3px solid #3FBF3F;
+}
+
+footer a {
+  color: lightskyblue; /* improves the contrast ratio of the license link (before visiting) */
+  text-decoration: none; /* removes the underline from the link */
+}
+
+footer a:visited {
+  color: rgb(174, 133, 214); /* improves the contrast ratio of the license link (after visiting) */
+  text-decoration: none; /* removes the underline from the link */
+}

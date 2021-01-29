@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">  <!--sets the language of the document for accessibility purposes-->
+
+  <head>  <!--the head section of the document containing information about the document-->
+    <meta charset="UTF-8"> <!--metadate setting the character set to UTF-8-->
+    <meta name="author" content="Ed Irvine">  <!--metadata specifiying the author of the document-->
+    <meta name="description"  content="A sample website designed as an assignment for the SAIT Web Developer program">  <!--metadata describing the purpose of the page-->
+    <meta name="keywords"  content="electrician, electrical, contractor, residential, commercial">  <!--metadata with keywords for older search engine optimization-->
+  
+    <title>Irvine's Electric - for all your residential and commercial needs!</title> <!--displays the name of the page in on the tab (Windows) or in the Title Bar (Mac)-->
+
+    <link href="https://fonts.gstatic.com" rel="preconnect">  <!--preconnects for access to Google fonts-->
+    <link href="main.css" rel="stylesheet"> <!--links the html document to the main.css file for CSS formatting-->
+        
+  </head>
+
+  <body>  <!--the body section of the document containg the content of the document-->
+  
+    <nav>
+      <ul>
+        <li><a href="#services">Services</a></li> <!-- link to services <div> -->
+        <li><a href="#about_us">About Us</a></li> <!-- link to about_us div  -->
+        <li><a href="#gallery">Gallery</a></li> <!-- link to gallery div  -->
+        <li><a href="#contact">Contact</a></li> <!-- link to contact div -->
+        <div> 
+          <li class="button_styling"><a class="button_text" href="#">Register</a></li> <!-- wrapped in a div to remove from the flex container -->
+          <li class="button_styling"><a class="button_text" href="#">Login</a></li>
+        </div>
+      </ul>
+    </nav>
+
+    <header class="container">
+      <a href="#"><img id="logo" src="assets/logos/lightening_bolt.svg" alt="Company logo of a lightening bolt"></a> <!--adds company logo to top of page and makes  it a link home -->
+      <div id="site_name">
+        <p id="sitenametext">Irvine Electric</p>
+      </div>
+    </header>    
+
+    <main>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio cupiditate fuga culpa illum, a magnam sunt facilis rerum debitis repudiandae error excepturi eum, eius sapiente?</p>
+      <div id="services">
+        <h1>Services</h1>
+        <img class="float_left" src="https://picsum.photos/200" alt="A random lorem picsum image">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima et est maiores recusandae blanditiis dolorum modi quibusdam expedita ex enim eligendi, tenetur cum quidem eos impedit distinctio beatae alias inventore officia nemo, voluptas perferendis! At quam rerum quasi dolorum porro.</p>
+      </div>
+      <div id="about_us">
+        <h1>About Us</h1>
+        <img class="float_right" src="https://picsum.photos/200" alt="A random lorem picsum limage">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim praesentium mollitia perferendis deleniti debitis porro maxime quo ipsum qui corrupti earum sed, quas illo harum ducimus voluptates architecto quidem magni! Provident repellat, qui dolor vel dolores nesciunt suscipit soluta reprehenderit.</p>
+      </div>
+      <div id="gallery">
+        <h1>Gallery</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam aliquam pariatur fugiat facere soluta, repellendus distinctio quas placeat et, velit tempore cupiditate enim recusandae deleniti. Quos totam sed officiis itaque explicabo corporis? Fuga iusto facilis sunt dolor aliquam voluptas ut.</p>
+      </div>
+      <div id="contact">
+        <h1>Contact</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, eveniet consequuntur pariatur at amet, error dolore deleniti aperiam a praesentium expedita adipisci laudantium tempore nemo vero, dicta et harum mollitia molestias omnis odio ipsam necessitatibus atque provident! Praesentium, deserunt illum.</p>    
+      </div>
+        <address>
+          <p class="map">MAP</p>
+          <div class="address_block">
+            <p>100 Coronation St</p>
+            <p>Regina, SK  S4C 5M4</p>
+            <br>
+            <p>306-555-1212</p>
+            <a id="email_link" href="mailto:email@email.email">Email us!!</a>
+          </div>
+        </address>
+    </main>
+
+    <footer>
+      <p>&copy; Ed Irvine 2021. <em>This work is licensed under a <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0 license.</a></em></p>
+    </footer>
+  </body>
+
+</html>
+
+<!--*********************************************TO DO ********************************************-->
+<!-- make email link change colour once visited                                                    -->                                                  
+<!-- make link to license change color properly                                                    -->
+<!-- make link to license open in a new tab                                                        -->
+<!-- remove id selectors (might break links to headers!!)                                                                           -->
+<!-- make padding clickable for nav bar links                                                      -->
+
+
+
+<!--******************************************** FLAWS ********************************************-->
+<!-- text for site name is sitting too high...  there is an inherited line height :(               -->
+<!-- desktop-first design with very little thought given to responsiveness                         -->
+<!-- logo and site name height should match                                                        -->
+<!-- register and login buttons turn green when hovered over - poor contrast                       -->                                                     
+
